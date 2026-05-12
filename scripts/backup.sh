@@ -4,7 +4,7 @@
 # Автор: Nick
 # Дата: $(date)
 
-BACKUP_DIR="./backups"
+BACKUP_DIR="/home/nick/my-devops-journey/backups"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_NAME="practice_backup_${TIMESTAMP}.tar.gz"
 

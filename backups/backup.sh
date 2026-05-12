@@ -4,7 +4,7 @@
 # Автор: Nick
 # Дата: $(date)
 
-BACKUP_DIR="./backups"
+BACKUP_DIR="/home/nick/my-devops-journey/backups"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_NAME="practice_backup_${TIMESTAMP}.tar.gz"
 
@@ -25,3 +25,8 @@ echo "Backup completed: $BACKUP_NAME"
 echo "Backup size: $(du -h "$BACKUP_DIR/$BACKUP_NAME" | cut -f1)"
 
 echo "=== Backup finished at $(date) ==="
+
+git add history/
+git commit -m "Daily history and backup update - $(date +"%Y-%m-%d")"
+git push
+
