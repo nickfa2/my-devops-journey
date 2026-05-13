@@ -1,0 +1,680 @@
+=== History saved at 2026-05-13 20:33:59 ===
+>>> New commands from this session:
+df -h
+cd /media/nick/VBox_GAs_7.2.6
+ls
+cd
+pwd
+ls
+ls -h
+ls -l
+ls -la
+ls -lh
+history
+ls -a
+ks -lh
+ls -lh
+cat/etc/hosts
+cat /etc/hosts
+cat > filename.txt
+ls
+cat filename.txt
+find / -name system
+find / -name system > output.txt 2> error.txt
+ls
+cat error.txt
+hostnamectl
+uname
+uname -a
+uname -m
+uname -r
+uname -h
+uname -ho
+uname -o
+uname -p
+uname -s
+uname -m
+uname -r
+uname -o
+uname -a
+man hostnamectl
+grep "kernel" /var/log/syslog
+ls -l | less
+ls -l
+less
+free -h
+du -h
+clera
+c;ear
+clear
+df -hT
+free -m
+du -sh~
+du -sh ~
+df -G
+df -h
+mkdir learning_linux
+ls
+touch file1.txt file2.txt file3.txt
+ls
+mv file.txt copy_file1.txt
+mv file1.txt copy_file1.txt
+ls
+mv copy_file1.txt file2.txt file3.txt learning_linux/
+ls
+cd learning_linux
+ls
+cp copy_file.txt file1.txt
+cp copy_file1.txt file1.txt
+ls
+cat > file2.txt
+ls
+cat file2.txt
+cp file2.txt copy_file2.txt
+ls
+mv copy_file2.txt freedom_file.txt
+ls
+mv freedom_file.txt /
+mv freedom_file.txt home/
+mv freedom_file.txt ~
+cd
+ls
+find "*.txt"
+find -type *.txt
+find  *.txt
+cd learning_directory
+cd learning_linux
+ls
+cat file1.txt
+cat > file1.txt
+sort file1.txt
+file file1.txt
+free
+free -h
+df -h
+head -5 /var/log/auth.log
+head -7 /var/log/auth.log
+head -1 /var/log/auth.log
+head  /var/log/auth.log
+tail -3  /var/log/auth.log
+tail  /var/log/auth.log
+tail -n 2 /var/log/auth.log
+tail -2 /var/log/auth.log
+ls | grep "file"| sort 
+cd
+ls | grep "file"| sort 
+sudo apt update
+apt show
+apt list
+la -li
+cd
+cat symlink_file1.txt
+ls
+cd Desktop
+cat symlink_file1.txt
+ls
+cat symlink_file1.txt
+vim symlink_file1.txt
+cd
+notepad
+sudo apt install -y scite
+sudo apt remove scite
+cd
+cd /Desktop
+ls
+cd /Desktop
+cd Desktop
+la
+cd symlink_file1
+cat symlink_file1
+ln -l symlink_file
+rm symlynk_file1
+unlink symlynk_file1
+;s
+ls
+rm symlynk_file1.txt
+ls
+cd
+ls
+mv hardlynk Desktop
+env
+echo $PATH
+vim
+sudo apt install tree
+tree
+pwd
+clear
+sudo apt update
+apt-get install htop
+sudo apt-get install htop
+htop
+sudo snap install vlc
+vlc --version
+sudo snap remove vlc
+mkdir ~/myfolder
+ls
+cd myfolder
+touch t1.txt t2.txt
+ls
+cd
+tar -cvf myfolder.tar.gz
+tar -cvf myfolder.tar.gz -C /myfolder
+tar cvf myfolder.tar.gz -C /myfolder
+tar cvf myfolder.tar.gz  /myfolder
+pwd
+tar cvf myfolder.tar.gz /myfolder
+tar cvf myfolder.tar.gz myfolder/
+ls
+tar -tvf myfolder.tar.gz
+mkdir extracted_folder
+ls
+tar -xvf myfolder.tar.gz -C /extracted_folder
+tar -xvf myfolder.tar.gz -C extracted_folder/
+ls
+cd extracted_folder
+ls
+cd myfolder
+ls
+cd ..
+cd
+mkdir testdir
+cd testdir
+touch file1.txt file2.txt
+ls
+vim file1.txt
+cat file1.txt
+vim file1.txt
+cat file1.txt
+pwd
+ln -s /home/user/testdir/file1.txt ~/Desktop/symlink_file1
+ln -s /home/user/testdir/file1.txt ~/Desktop/symlink_file1.txt
+ln -s /home/user/testdir/file1.txt ~/Desktop/symlink_file1
+ln -s /home/user/testdir/file1.txt ~/Desktop/symlink_file1.txt
+pwd file1.txt
+realpath file1.txt
+ln -s /home/nick/testdir/file1.txt
+ln -s /home/nick/testdir/file1.txt ~/Desktop/symlink.txt
+cat file1.txt
+rm file1.txt
+ls
+ln /home/nick/testdir/file2.txt ~/hardlynk
+vim file2.txt
+rm file2.txt
+ls
+cd ..
+ls
+rm error.txt output.txt
+cd learning_linux
+ls
+cd
+echo "test"
+NAME = "Ivan"
+NAME = "Ivan" echo $NAME
+env
+echo SHELL
+echo $SHELL
+export TEST_VAR="Test value"
+echo $TEST_VAR
+unset TEST_VAR
+echo $TEST_VAR
+cat /etc/passwd
+sudo cat /etc/shadow
+id root
+listusers
+cat users
+users
+cat /etc/passwd
+cat /etc/group
+clear
+groups
+whichgroups
+id
+touch file.txt
+ls
+ln -s
+ln -l | grep file.txt
+ls -l | grep file.txt
+chmod u=rwx file.txt
+ls -l | grep file.txt
+chmod g-rwx file.txt
+ls -l | grep file.txt
+rm file.txt
+ls
+umask
+umask 0077
+umask
+stat
+stat filename.txt
+ls -l
+w
+last
+who
+cat /var/log/btmp
+sudo cat /var/log/btmp
+users
+sudo -l
+sudo useradd -m sudo -s /bin/bash anna
+sudo useradd -m -G sudo -s /bin/bash anna
+sudo passwd anna
+su anna
+sudo groupadd developers
+cat /etc/group | grep developres
+cat /etc/group | grep developers
+usermod -aG developers anna
+sudo usermod -aG developers anna
+id anna
+touch testanna
+ls
+sudo chown anna testanna
+ls -l | grep testanna
+sudo chown :developers testanna
+ls -l | grep testanna
+sudo chown nick testanna
+sudo chmod u+rwx, g+rx, o+r testanna
+sudo chmod u + rwx, g + rx, o + r testanna
+sudo chmod u+rwx, g + rx, o + r testanna
+sudo chmod u=rwx, g=rx, o=r testanna
+sudo chmod u=rwx,g=rx,o=r testanna
+ls -l | grep testanna
+sudo visudo
+su anna
+sudo visudo
+pkexec visudo
+su anna
+sudo apt update
+sudo apt install git
+git --version
+git config --global user.name "Nick"
+git config --global uses.email "n.malev92@gmail.com
+git config --global uses.email "n.malev92@gmail.com"
+git config --list
+git config --global core.editor "code --wait"
+git config --global color.ui auto
+git config --global alias.lg "log --oneline --graph --all"
+mkdir gitpro
+cd gitpro
+git init
+git status
+echo "hello, Git!" > hello.txt
+git add hello.txt
+git status
+git commot -m "First commit: add hello.txt"
+git commit -m "First commit: add hello.txt"
+git status
+git commit -m "First commit: add hello.txt"
+git config --global user.name "Nick"
+git config --global uses.email "n.malev92@gmail.com"
+git commit -m "First commit: add hello.txt"
+git log
+git commit -m"First commit: add hello.txt"
+git commit -m "First commit: add hello.txt"
+clear
+git commit -m "First commit: add hello.txt"
+git config --global uses.email "n.malev92@gmail.com"
+git config --global user.name "Nick"
+git commit -m "First commit: add hello.txt"
+git config --global user.email "n.malev92@gmail.com"
+git config --global user.name "Nick"
+git commit -m "First commit: add hello.txt"
+git log
+git status
+git log
+ls
+cd gitpro
+ls
+cd gitpro
+git log
+git --oneline
+git log --oneline
+git diff
+git diff --cached
+git diff hello.txt
+git diff HEAD
+git commit -m "Second commit: test2"
+git status
+echo "test1304" > hello.txt
+git add hello.txt
+git commit -m "test1304"
+git status
+git log
+git diff
+git diff HEAD
+git show
+git --simple
+git remote add origin https://github.com/nickfa2/Devopstest.git
+git init
+ls
+git remote add origin git@github.com:nickfa2/Devopstest.git
+git branch -M main
+git remote add origin git@github.com:nickfa2/Devopstest.git
+mkdir git
+cd git
+git init
+git add README.md
+git remote add origin git@github.com:nickfa2/Devopstest.git
+git branch -M main
+git remote add origin git@github.com:nickfa2/Devopstest.git
+git remote set-url origin https://github.com/nickfa2/Devopstest.git
+git push -u origin main
+git remote -v
+git commit -m "first commit"
+git branch -M main
+ls
+cd
+rm git
+sudo rm -r git
+mkdir git
+cd mkdir
+cd git
+ls
+echo "#TEST" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nickfa2/test.git
+git push -u origin main
+git remote add origin git@github.com:nickfa2/test.git
+cd
+sudo rm -r git
+mkdir git
+echo "#test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:nickfa2/test.git
+cd
+sudo rm -r git
+ssh-keygen -t ed25519 -C "n.malev92@gmail.com"
+cd ~/.ssh/
+ls
+cat id_ed25519.pub
+ssh -T git@github.com
+cd
+ls
+mkdir git
+cd git
+echo "#test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:nickfa2/test.git
+git push -u orgogn main
+git push -u orgigin main
+git push -u origin main
+ls
+cd git
+ls -la
+cd .git/
+ls
+ls 
+cd git
+ls -la
+git status
+echo "21.04 test" >> test.txt
+ls
+cat test .txt
+cat test.txt
+git status
+git add test.txt
+git status
+git commit
+git commit -m "Test commit 21.04"
+git config core.editor nano
+git config list
+ls
+vim text.ls
+vim text.txt
+vim test.txt
+git status
+git add test.txt
+git status
+git commit
+it status
+git status
+git log
+git show
+git log --oneline
+cd git
+git log --oneline
+ls
+touch some_binary_file{1..9}.bin
+ls
+git status
+git clean -f
+ls
+git status
+cd git\
+git diff
+ls
+git diff HEAD
+git log --oneline
+ls
+vim test.txt
+git status
+git add test.txt
+git status
+git commit -m "commit number 3"
+git diff
+git diff test.txt
+git status
+git log
+git log --oneline
+git diftool
+git difftool
+git diff HEAD
+git diff --staged
+git diff --cached
+git diff HEAD~1
+git kog --stat
+git log --stat
+git log --p
+git log -p
+cd
+git clone https://github.com/githubtraining/hellogitworld
+ls
+cd hellogitworld
+ls
+git log --oneline
+ls
+git log --oneline README.txt
+git log --stat
+git log --graph
+git log --pretty=format:"%h - %an - %as - %s"
+mkdir project-recovery
+cd project-recovery
+git init
+ls -la
+ls -a
+touch app-config.json
+vim app-config.json
+cat app-config.json
+git status
+git add .
+git status
+git commit -m "Initial: damaged config from Koschey"
+git status
+git log
+rm app-config.json
+git status
+ls
+git reset --hard
+ls
+git log
+git rm app-config.json
+ls
+git status
+vim backup-config.json
+git status
+git add .
+git commit -m "Recovery: restored working config from backup"
+git log --oneline
+git diff HEAD
+git diff app-config.json backup-config.json
+mv backup-config.json app-config.json
+ls
+git status
+git add .
+git status
+git commit -m "Renamed config file" 
+git log --oneline
+git diff --staged
+git diff --cached
+git show
+git log --oneline
+git reset HEAD~1
+git log --oneline
+ls
+git status
+git add .
+git status
+git commit --amend
+git status
+git commit --amend -m "Recovery: restored working config from backup"
+git status
+git log --oneline
+git diff 420a360 1ea77d4
+vim .gitignore
+git status
+git add .
+git status
+git commit -m "add .gitignore file"
+git log --oneline
+git history
+history
+git log --oneline
+cat app-config.json
+cat .gitignore
+git remote add origin https://github.com/nickfa2/project-recovery.git
+git status
+git branch
+git push -u origin master
+touch README.txt
+git status
+git add .
+git commit -m "create README"
+git push
+ssh -T git@github.com
+mkdir git_rep
+cd git_rep
+git clone git@github.com:nickfa2/project-recovery.git
+ls
+cd project_recovery
+cd project-recovery
+ls
+git status
+git log --oneline
+ls
+mkdir scripts
+cd scripts
+vim backup.sh
+ls
+chmod +x backup.sh
+ls -la
+backup.sh
+./backup.sh
+ls
+cd backups
+ls
+cd ..
+source ~/.bashrc
+sudo vim ~/.bashrc
+source ~/.bashrc
+sudo vim ~/.bashrc
+source ~/.bashrc
+vim save_history.sh
+chmod +x save_history.sh
+ls- la
+ls -la
+vim backup.sh
+git init
+git status
+git add.
+git status
+git add .
+git status
+git commit -m "Initialization"
+git status
+ssh -T git@github.com:nickfa2/my-devops-journey.git
+ssh -T git@github.com
+ssh -T git@github.com:nickfa2/my-devops-journey.git
+ls
+cd 
+mv scripts my-devops-journey
+ls
+cd my-devops-journey
+mkdir scripts
+ls
+mv backup.sh save_history.sh scripts
+cd scripts
+ls
+./bac
+./backup.sh
+git status
+git add .
+git status
+git commit -m "Init new folder scripts"
+git status
+git add .
+git status\
+git log
+git log --oneline
+ls
+vim backup.sh
+rm -r backups
+ls
+cd ..
+ls
+cd bacups
+cd backups
+ls
+cd ..
+path
+ls
+pwd
+cd scripts
+./backup.sh
+git add .
+git status
+vim backup.sh
+git add .
+git status
+git add
+git clean -f
+git status
+git clean -f -n
+cd ..
+ls
+git clean -f -n
+git add .
+git status
+git log --oneline
+git clone git@github.com:nickfa2/my-devops-journey.git
+git remote add origin git@github.com:nickfa2/my-devops-journey.git
+git remote -v
+ls
+rm -r my-devops-journey
+ls
+git status
+git commit -m "prepare to pull"
+git status
+git commit --amend
+git commit -m --amend
+git log --oneline
+git commit --amend
+git show
+git status
+git push
+git push --set-upstream origin master
+git push
+touch README.txt
+vim README.txt
+git status
+git add .
+git commit -m " create README"
+git status
+git push
+>>> End of session 2026-05-13 20:33:59
+
