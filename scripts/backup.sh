@@ -2,8 +2,9 @@
 
 # Backup script for DevOps practice
 # Автор: Nick
-# Цель: Чистый бэкап учебных материалов без мусора
+# Цель: Чистый бэкап только учебных материалов (документация и конспекты)
 
+# Определяем пути относительно расположения скрипта
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
@@ -11,26 +12,31 @@ BACKUP_DIR="$PROJECT_ROOT/backups"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_NAME="practice_backup_${TIMESTAMP}.tar.gz"
 
+# Создаём папку для бэкапов
 mkdir -p "$BACKUP_DIR"
 
 echo "=== Backup started at $(date) ==="
+echo "Project root: $PROJECT_ROOT"
 
+# Переходим в корень проекта
 cd "$PROJECT_ROOT" || exit 1
 
-# Копируем только нужные файлы, исключая backups и history
-find . -maxdepth 2 \( -name "*.md" -o -name "*.sh" \) \
-    -not -path "./backups/*" \
-    -not -path "./history/*" \
-    -not -name "practice_backup_*.tar.gz" | while read -r file; do
-    cp "$file" "$BACKUP_DIR/" 2>/dev/null
-done
+# Копируем ТОЛЬКО важные файлы (без скриптов из папки scripts)
+echo "Copying documentation files..."
 
-# Создаём архив
+cp README.md "$BACKUP_DIR/" 2>/dev/null
+cp docs/*.md "$BACKUP_DIR/" 2>/dev/null
+
+# Если хочешь бэкапить другие расширения — добавь сюда
+
+echo "Creating archive..."
 cd "$BACKUP_DIR" || exit 1
-tar -czf "$BACKUP_NAME" --exclude="practice_backup_*.tar.gz" . 2>/dev/null
+
+tar -czf "$BACKUP_NAME" *.md 2>/dev/null
 
 echo "Backup completed: $BACKUP_NAME"
 echo "Size: $(du -h "$BACKUP_NAME" | cut -f1 2>/dev/null || echo 'Unknown')"
 echo "=== Backup finished at $(date) ==="
 
+# Возвращаемся обратно в корень проекта
 cd "$PROJECT_ROOT"
